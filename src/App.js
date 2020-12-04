@@ -7,9 +7,10 @@ import Display from "./Display";
 import Form from "./Form";
 
 function App() {
-  //Variable to hold the url of the backend (will be different than frontend).  So you don't have to change in each fetch when you change to a deployment site (herokuapp.com)
+  //Variable to hold the url of the backend (will be different than frontend).  So you don't have to change in each fetch when you change to a deployment site (herokuapp.com).  Also need to add s to https once using Netlify.
   // const url = 'http://localhost:4500';  
-  const url = 'http://ctdogsbackend.herokuapp.com';
+  // const url = 'http://ctdogsbackend.herokuapp.com';
+  const url = 'https://ctdogsbackend.herokuapp.com';
 
   
   /*Variable to hold state of dogs database collection. 
