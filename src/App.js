@@ -59,13 +59,14 @@ function App() {
 
   //Used with the update form
   const handleUpdate = (dogToEdit) => {
-    fetch(url + '/dog' + dogToEdit._id, {
+    fetch(url + '/dog/' + dogToEdit._id, {
       method: 'put',
       headers: {
         'Content-Type': 'application/json'
       }, 
       body: JSON.stringify(dogToEdit)
     })
+    .then(console.log(dogToEdit))
     .then((res) => getDogs());
   };
 
